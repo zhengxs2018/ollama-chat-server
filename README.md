@@ -17,11 +17,11 @@ Connecting to http://127.0.0.1:1243
 
 本仓库主要演示如何通过自定义服务，将 [ollama][ollama-repo-link] 完美适配 OpenAI 的输入输出。
 
-本项目代码仅仅是请求转发以及兼容 OpenAI 协议。
 
 > [!IMPORTANT]  
 > 你需要启动一个 [ollama][ollama-repo-link] 的服务，并且确保 [API][ollama-api-docs-link] 可被正常调用。
 
+本项目代码仅仅是请求转发以及兼容 OpenAI 协议。
 
 > [!WARNING]  
 > 本项目只支持 `node.js>=18`。
@@ -76,7 +76,7 @@ console.log(completion.choices[0].message.content);
 
 本服务适配多个 openai 的请求地址，但速度和效率没有 ollama 的好，唯一的用处是作为 BFF 层，方便接入授权协议。
 
-### 师傅推荐使用本项目作为生产依赖？
+### 是否推荐作为生产项目？
 
 不推荐，仅用于学习。
 
